@@ -18,7 +18,7 @@ export default {
     exclude: ["dev/bundle/*"],
   },
   plugins: [
-    resolve(),
+    resolve({ extensions: [".js", ".jsx", ".ts", ".tsx"] }),
     commonToES6({ include: "node_modules/**" }),
     replace({ "process.env.NODE_ENV": JSON.stringify("production") }),
     styles(),
@@ -32,6 +32,6 @@ export default {
         include: ["dev/*"],
       },
     }),
-    serve({ open: true, port: 5000, contentBase: ["dev"] }),
+    serve({ open: true, port: 5000, contentBase: ["dev"], verbose: true }),
   ],
 };

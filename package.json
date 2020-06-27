@@ -30,7 +30,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rollup": "^2.18.0",
-    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-styles": "^3.8.2",
